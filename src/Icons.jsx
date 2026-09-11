@@ -32,9 +32,27 @@ export function FacebookIcon() {
   );
 }
 
+export function PinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="white">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+    </svg>
+  );
+}
+
+export function MenuIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
+      <path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M18 3c-2 1-3 3-3 6s1 3 3 3v9" />
+    </svg>
+  );
+}
+
 export const ICONS = {
   whatsapp: { Icon: WhatsappIcon, className: "icon whatsapp" },
   instagram: { Icon: InstagramIcon, className: "icon instagram" },
   tiktok: { Icon: TiktokIcon, className: "icon tiktok" },
   facebook: { Icon: FacebookIcon, className: "icon facebook" },
+  pin: { Icon: PinIcon, className: "icon pin" },
+  menu: { Icon: MenuIcon, className: "icon menu" },
 };
