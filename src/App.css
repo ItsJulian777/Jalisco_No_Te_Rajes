@@ -144,15 +144,15 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(180deg, #6b3f1f, #4a2a14);
-  border: 2px solid var(--gold-edge);
+  background: rgba(255, 248, 236, 0.96);
+  border: none;
   border-radius: 999px;
-  padding: 12px 18px;
+  padding: 13px 18px;
   text-decoration: none;
-  color: var(--gold);
+  color: #1c0a2e;
   font-weight: 700;
   font-size: 15px;
-  box-shadow: 0 3px 0 var(--plank-edge), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.28);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -163,14 +163,14 @@
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 var(--plank-edge), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.28);
 }
 .btn:active {
   transform: translateY(1px);
-  box-shadow: 0 1px 0 var(--plank-edge);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
 }
 .btn:focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid #fdf8ec;
   outline-offset: 2px;
 }
 
@@ -188,7 +188,7 @@
   height: 17px;
 }
 .icon.whatsapp {
-  background: var(--whatsapp);
+  background: var(--red);
 }
 .icon.instagram {
   background: radial-gradient(circle at 30% 110%, #ffdb73 0%, #fd5949 30%, #d6249f 55%, #285aeb 90%);
