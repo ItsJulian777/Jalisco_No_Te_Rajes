@@ -225,3 +225,11 @@
   font-family: "Barlow", sans-serif;
   font-weight: 600;
 }
+
+.mariachi {
+  position: absolute;
+  right: 6px;
+  bottom: -14px;
+  transform: rotate(-6deg);
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.45));
+}

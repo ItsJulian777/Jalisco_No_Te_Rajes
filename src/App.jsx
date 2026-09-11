@@ -1,6 +1,7 @@
 import { LINK_GROUPS } from "./data";
 import { ICONS } from "./Icons";
 import Sombrero from "./Sombrero";
+import Mariachi from "./Mariachi";
 import "./App.css";
 
 export default function App() {
@@ -50,6 +51,8 @@ export default function App() {
         ))}
 
         <p className="footer">Jalisco Gastro Bar</p>
+
+        <Mariachi />
       </main>
     </div>
   );
