@@ -1,6 +1,6 @@
 export default function Mariachi() {
   return (
-    <svg className="mariachi" width="64" height="72" viewBox="0 0 64 72" aria-hidden="true">
+    <svg className="mariachi" width="110" height="124" viewBox="0 0 64 72" aria-hidden="true">
       {/* guitarra */}
       <g transform="translate(2 30) rotate(-18)">
         <path d="M8 20c-4 0-7-4-7-9s3-9 7-9 7 3 7 6-2 4-2 7 2 3 2 6-3 9-7 9Z" fill="#7a4a22" stroke="#4a2a10" strokeWidth="1.2" />

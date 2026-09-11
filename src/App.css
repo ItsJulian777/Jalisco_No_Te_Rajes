@@ -40,7 +40,7 @@
     linear-gradient(180deg, var(--plank), var(--plank-edge));
   border: 3px solid var(--rope);
   border-radius: 18px;
-  padding: 38px 24px 28px;
+  padding: 38px 24px 46px;
   box-shadow: 0 24px 50px -18px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both;
 }
@@ -217,7 +217,7 @@
 
 .footer {
   text-align: center;
-  margin-top: 24px;
+  margin: 24px 70px 0 0;
   font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--cream-soft);
@@ -228,8 +228,8 @@
 
 .mariachi {
   position: absolute;
-  right: 6px;
-  bottom: -14px;
+  right: -6px;
+  bottom: -22px;
   transform: rotate(-6deg);
-  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.45));
 }
