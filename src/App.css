@@ -1,14 +1,12 @@
 :root {
-  --wood-dark: #1c0f07;
-  --wood-mid: #3a2010;
-  --wood-core: #5a3418;
-  --plank: #4a2a14;
+  --wood-dark: #260f09;
+  --wood-mid: #4a1810;
+  --wood-core: #7a2418;
   --plank-edge: #24140a;
-  --rope: #8a5a2b;
   --gold: #e8b23d;
   --gold-edge: #5c3a10;
-  --cream: #f3e6c8;
-  --cream-soft: rgba(243, 230, 200, 0.72);
+  --cream: #fff8ec;
+  --cream-soft: rgba(255, 248, 236, 0.78);
   --green: #2e7d46;
   --red: #c8342a;
   --whatsapp: #25d366;
@@ -33,16 +31,22 @@
 
 .card {
   position: relative;
+  overflow: hidden;
   width: 100%;
   max-width: 420px;
   background:
-    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0 2px, transparent 2px 18px),
-    linear-gradient(180deg, var(--plank), var(--plank-edge));
-  border: 3px solid var(--rope);
+    repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.09) 0 10px, transparent 10px 22px),
+    linear-gradient(180deg, #d1382a, #b8271c);
   border-radius: 18px;
-  padding: 38px 24px 46px;
+  padding: 0 0 4px;
   box-shadow: 0 24px 50px -18px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+.bunting-row {
+  display: block;
+  width: 100%;
+  height: 20px;
 }
 @media (prefers-reduced-motion: reduce) {
   .card {
@@ -60,36 +64,35 @@
   }
 }
 
-.bolt {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #e8c98a, #8a5a2b 70%);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+.content {
+  position: relative;
+  text-align: center;
+  padding: 22px 24px 6px;
 }
-.bolt-tl { top: 12px; left: 12px; }
-.bolt-tr { top: 12px; right: 12px; }
-.bolt-bl { bottom: 12px; left: 12px; }
-.bolt-br { bottom: 12px; right: 12px; }
 
 .sombrero {
   display: block;
-  margin: 0 auto 4px;
+  margin: 0 auto 6px;
 }
 
 .logo {
   text-align: center;
-  font-family: "Rye", serif;
-  margin: 4px 0 16px;
+  margin: 6px 0 6px;
 }
 .logo .jalisco {
   display: block;
-  font-size: 46px;
-  line-height: 1;
-  color: var(--gold);
-  text-shadow: 0 3px 0 var(--gold-edge), 0 5px 8px rgba(0, 0, 0, 0.5);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 62px;
+  line-height: 0.85;
+  text-transform: uppercase;
   text-wrap: balance;
+  color: transparent;
+  background: linear-gradient(180deg, #2f6e3a 0 32%, #fdf8ec 32% 66%, #c8342a 66% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 3px #fdf8ec;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 3px 0 #5c0f08);
 }
 .logo .gastro {
   display: block;
@@ -102,32 +105,26 @@
   font-weight: 700;
 }
 
-.ribbon {
-  height: 6px;
-  margin: 4px auto 14px;
-  width: 70%;
-  border-radius: 3px;
-  overflow: hidden;
-  background: linear-gradient(to right, var(--green) 0 33%, #f4ecd8 33% 66%, var(--red) 66% 100%);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-
 .motto {
-  text-align: center;
-  font-family: "Rye", serif;
-  font-size: 19px;
-  color: var(--cream);
-  margin: 0 0 22px;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #7a2418;
+  background: #fdf8ec;
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin: 8px 0 22px;
 }
 
 .group-label {
+  position: relative;
   font-family: "Barlow", sans-serif;
   font-weight: 800;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--cream-soft);
+  color: #ffdcc8;
   margin: 18px 4px 8px;
 }
 .group-label:first-of-type {
@@ -224,12 +221,4 @@
   text-transform: uppercase;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-}
-
-.mariachi {
-  position: absolute;
-  right: -6px;
-  bottom: -22px;
-  transform: rotate(-6deg);
-  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.45));
 }
