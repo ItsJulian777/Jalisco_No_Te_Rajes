@@ -139,9 +139,9 @@
   margin: 12px 0 14px;
   font-family: var(--font-motto);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.15;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--bone);
   text-wrap: balance;
