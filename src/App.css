@@ -136,12 +136,16 @@
 }
 
 .sub {
-  margin: 8px 0 10px;
-  font-weight: 800;
-  font-size: 12px;
-  letter-spacing: 0.24em;
+  margin: 12px 0 14px;
+  font-family: var(--font-motto);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--bone);
+  text-wrap: balance;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
 }
 .pill {
   display: inline-block;
